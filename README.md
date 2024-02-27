@@ -1,5 +1,6 @@
 # cse210-ww-student-template
-This is the starter code for students in the worldwide content version of CSE 210.
+Colby MacArthur
+This is where I will store all my projects and assignments for CSE210
 
 This repository contains the starter code for many different projects. They are arranged as follows:
 

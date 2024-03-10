@@ -8,7 +8,7 @@ public class Job
     public int _endYear;
 
     public void DisplayJobDetails()
-    {
+    { 
         Console.WriteLine($"{_jobTitle} at {_company} from {_startYear} to {_endYear}.");
     }
 }

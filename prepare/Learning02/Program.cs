@@ -20,7 +20,7 @@ class Program
 
         Resume me = new Resume();
         me._name = "Colby MacArthur";
-
+ 
         me._jobs.Add(job1);
         me._jobs.Add(job2);
 

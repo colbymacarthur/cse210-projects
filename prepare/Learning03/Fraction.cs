@@ -6,6 +6,7 @@ public class Fraction
     private int _numerator;
     private int _denominator;
 
+    // Getters and setters
     public int Numerator
     {
         get 
@@ -32,7 +33,7 @@ public class Fraction
             _denominator = value;
         }
     }
-
+    // constructs
     public Fraction()
     {
         _numerator = 1;
@@ -45,13 +46,16 @@ public class Fraction
         _numerator = wholeNumber;
         _denominator = 1;
         Console.WriteLine(GetFractionString());
-        Console.WriteLine(GetDecimalValue());               }
+        Console.WriteLine(GetDecimalValue());               
+    }
     public Fraction(int numerator, int denominator )
     {
         _numerator = numerator;
         _denominator = denominator;
         Console.WriteLine(GetFractionString());
-        Console.WriteLine(GetDecimalValue());    }
+        Console.WriteLine(GetDecimalValue());    
+    }
+    // Methods
     public string GetFractionString()
     {
         string normalFraction = $"{_numerator}/{_denominator}";

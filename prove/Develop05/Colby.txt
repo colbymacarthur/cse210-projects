@@ -1,0 +1,4 @@
+Simple goal: | slepp | sleep 8hrs a night | 50 | False
+Simple goal: | Eat | Eat 3 times a day | 60 | False
+Simple goal: | Play | Play with my kids for 30 min | 100 | False
+Checklist goal: | Homework | Finish all homework by due date | 50 | 100 | 5

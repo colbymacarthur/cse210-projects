@@ -1,0 +1,11 @@
+Fred Wilson | Bananas | 6
+Fred Wilson | Milk | 2
+Fred Wilson | Cereal | 1
+Veronica Castro | Oranges | 4
+George Smith | Dragonfruit | 2
+Veronica Castro | Apples | 10
+Felipe Gonzalez | Bread | 2
+Veronica Castro | Bananas | 4
+George Smith | Bread | 2
+Felipe Gonzalez | Milk | 5
+Fred Wilson | Dragonfruit | 1

@@ -4,6 +4,10 @@ public class Order
 {
     // Attributes
     private List<String> _orders = new List<string>();
+    private string _cCustomerName;
+    private string _country;
+    private int _total;
+    private int _shipping;
 
     // Methods
     public List<string> LoadOrders()
@@ -33,21 +37,21 @@ public class Order
         foreach (string c in customerData)
         {
             string[] pair = c.Split('|');
-            string c_customerName = pair[1].Trim();
-            string country = pair[5].Trim();
+            _cCustomerName = pair[1].Trim();
+            _country = pair[5].Trim();
             Address address = new Address();
             Console.WriteLine("Shipping label\n");
-            address.ShippingLabel(customerData, c_customerName);
+            address.ShippingLabel(customerData, _cCustomerName);
             Console.WriteLine("\nInvoice\nProduct Quantity Item total");
-            int total = 0;
-            int shipping = address.ShippingCost(country);
+            _total = 0;
+            _shipping = address.ShippingCost(_country);
             foreach (string o in orderData)
             {
                 string[] parts = o.Split('|');
                 string customerName = parts[0].Trim();
                 string orderProduct = parts[1].Trim();
                 int quantity = int.Parse(parts[2].Trim());
-                if (c_customerName == customerName)
+                if (_cCustomerName == customerName)
                 {
                     foreach (string p in productData)
                     {
@@ -57,15 +61,15 @@ public class Order
                         if (productName == orderProduct)
                         {
                             int itemTotal = price * quantity;
-                            total += itemTotal;
+                            _total += itemTotal;
                             Console.WriteLine($"{orderProduct}: {quantity} -- ${itemTotal}.00");
                         }
                     }
                 }
             }
-            Console.WriteLine($"Subtotal ${total}.00");
-            Console.WriteLine($"Shipping cost: {shipping}");
-            Console.WriteLine($"Total due ${total + shipping}.00");
+            Console.WriteLine($"Subtotal ${_total}.00");
+            Console.WriteLine($"Shipping cost: ${_shipping}.00");
+            Console.WriteLine($"Total due ${_total + _shipping}.00");
             Console.WriteLine("\n------------------\n");
         }
     }

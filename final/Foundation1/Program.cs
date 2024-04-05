@@ -7,5 +7,5 @@ class Program
         Console.Clear();
         Video data = new Video();
         data.LoadVideoData();
-    }
+    } 
 }

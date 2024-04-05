@@ -3,7 +3,7 @@ using System;
 public class Video
 {
     // Attributes
-    private string _title;
+    private string _title; 
     private string _author;
     private string _length;
     private List<string> _videoData = new List<string>();

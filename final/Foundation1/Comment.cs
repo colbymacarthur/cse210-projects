@@ -18,7 +18,7 @@ public class Comment
         {
             using (StreamReader reader = new StreamReader(fileName))
             {
-                string line;
+                string line; 
 
                 while ((line = reader.ReadLine()) != null)
                 {

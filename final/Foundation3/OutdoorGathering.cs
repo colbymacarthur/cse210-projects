@@ -1,21 +1,19 @@
 using System;
 
-public class Lecture : Event
+public class OutdoorGathering : Event
 {
     // Attributes
-    private string _speaker;
-    private string _capacity;
+    private string _weather;
 
     // Constructors
-    public Lecture(string name, string description, string date, string time, string address, string speaker, string capacity)
+    public OutdoorGathering(string name, string description, string date, string time, string address, string weather)
     {
         _eventTitle = name;
         _description = description;
         _date = date;
         _time = time;
         _address = address;
-        _speaker = speaker;
-        _capacity = capacity;
+        _weather = weather;
     }
 
     // Methods
@@ -24,11 +22,10 @@ public class Lecture : Event
         Console.WriteLine("Standard desciption");
         Console.WriteLine($"Event name: {_eventTitle}");
         Console.WriteLine($"Event Type: {_eventType}");
-        Console.WriteLine($"Speaker: {_speaker}");
         Console.WriteLine($"Description: {_description}");
         Console.WriteLine($"Date: {_date}");
         Console.WriteLine($"Time: {_time}");
-        Console.WriteLine($"Capacity: {_capacity}");
+        Console.WriteLine($"Weather Forcast: {_weather}");
         Console.WriteLine($"Location: {_address}\n");
     }
 }

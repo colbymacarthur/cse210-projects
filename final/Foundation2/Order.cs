@@ -35,7 +35,7 @@ public class Order
     public void PackingLabel(List<string> customerData, List<string> orderData, List<string> productData)
     {
         foreach (string c in customerData)
-        {
+        {   // Cycle through custemer data
             string[] pair = c.Split('|');
             _cCustomerName = pair[1].Trim();
             _country = pair[5].Trim();
@@ -45,8 +45,9 @@ public class Order
             Console.WriteLine("\nInvoice\nProduct Quantity Item total");
             _total = 0;
             _shipping = address.ShippingCost(_country);
+
             foreach (string o in orderData)
-            {
+            {   // Cycle through order data
                 string[] parts = o.Split('|');
                 string customerName = parts[0].Trim();
                 string orderProduct = parts[1].Trim();

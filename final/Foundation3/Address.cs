@@ -3,34 +3,28 @@ using System;
 public class Address
 {
     // Attributes
-    private List<string> _venueData = new List<string>();
+    private string _venueName;
+    private string _address;
+    private string _cityANDstate;
 
 
     // Constructors
 
     // Methods
-    public List<string> LoadVenues()
+    
+    public string EventAddress(List<string> venueData, string venue)
     {
-        string filename = "Venue.txt";
-        try
-        {
-            using (StreamReader reader = new StreamReader(filename))
-            {
-                reader.ReadLine();
-                string line;
-                List<string> venues = new List<string>();
-                while ((line = reader.ReadLine()) != null)
+        foreach (string v in venueData)
+            {   // Cycle through venues
+                string[] parts = v.Split('|');
+                _venueName = parts[0].Trim();
+                _address = parts[1].Trim();
+                _cityANDstate = parts[2].Trim();
+                if (_venueName == venue)
                 {
-                    _venueData.Add(line);
+                    return $"{_venueName}, {_address}, {_cityANDstate}";
                 }
-                Console.WriteLine("Customer data loaded successfully\n");
-                return _venueData;
             }
-        }
-        catch (FileNotFoundException)
-        {
-            Console.WriteLine("No customer data loaded");
-            return new List<string>(); // return empty list on error
-        }
+        return "Venue not found";
     }
 }

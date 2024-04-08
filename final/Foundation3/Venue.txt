@@ -1,1 +1,5 @@
 Name of the Venue | streetaddress | City and state
+The Buzz | 428 Real Avenue | Sandy, Utah
+The Garden | 892 Bugambilias | Provo, Utah
+Publik Space | 2967 Davis Blvd | Salt Lake City, Utah
+Valley Fair Even Center | 720 Woodson Drive | Draper, Utah

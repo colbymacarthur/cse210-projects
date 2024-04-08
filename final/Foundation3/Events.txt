@@ -1,0 +1,4 @@
+Title | Event type | Description | Date | Time | Venue
+Linguistic Barriers | Lecture | How to overcome language barriers with non-verbal communication and technology | 25 April | 7:00 pm | Publik Space | Dr. Ling | 150
+Johnson Wedding | Reception | Brad Johnson and Emily Bryant are getting married | 3 May | 5:00 pm | The Garden | johnson@weddingregistry.com | xxx
+2004 High School Reunion | Outdoor Gathering | 20 year Reunion for Layton High School 2004 graduates | 6 June | 4:00 pm | The Buzz | Sunny: High of 95 | xxx
